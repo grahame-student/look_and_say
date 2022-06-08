@@ -15,4 +15,4 @@ class SequenceGenerator:
         :return: Returns the next value in the look and see sequence
         :rtype:  string
         """
-        pass
+        return f"{1}"
