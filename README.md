@@ -4,7 +4,7 @@
 Code Coverage map
 [![Coverage](https://codecov.io/gh/Grahame-student/look_and_say/branch/main/graphs/icicle.svg?token=YT2UYXPE69)](https://codecov.io/gh/Grahame-student/look_and_say/branch/main/graphs/icicle.svg?token=YT2UYXPE69)
 
-Python implementation of the look and say sequence: https://en.wikipedia.org/wiki/Look-and-say_sequence
+Python implementation of the [look and say](https://en.wikipedia.org/wiki/Look-and-say_sequence) sequence
 
 ## Requirements
 Python 3.x installed
