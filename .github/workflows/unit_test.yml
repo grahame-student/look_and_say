@@ -27,8 +27,12 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
+          deactivate
       - name: Run tests with pytest
-        run: pytest --cov=./ --cov-report=xml
+        run: |
+          source venv/bin/activate
+          pytest --cov=./ --cov-report=xml
+          deactivate
       - name: Upload Coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
