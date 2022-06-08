@@ -7,7 +7,7 @@ class SequenceGenerator:
         :type  start_value: int
         """
         pass
-    
+
     def next_value(self):
         """
         Generate the next value in the look and see sequence
