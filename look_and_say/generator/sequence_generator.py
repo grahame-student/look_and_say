@@ -14,9 +14,9 @@ class SequenceGenerator:
 
     def next_value(self):
         """
-        Return the next value in the look and see sequence
+        Return the next value in the look and say sequence
 
-        :return: Returns the next value in the look and see sequence
+        :return: Returns the next value in the look and say sequence
         :rtype:  string
         """
         result = self.__next
@@ -25,6 +25,12 @@ class SequenceGenerator:
         return result
 
     def __get_next_value(self):
+        """
+        Calculate the next value in the look and say sequence
+
+        :return: Returns the next value in the look and say sequence
+        :rtype:  string
+        """
         # split __next into chunks of the same value
         chunks = SequenceGenerator.__split(self.__next)
 
@@ -36,10 +42,35 @@ class SequenceGenerator:
 
     @staticmethod
     def __split(input_text):
+        """
+        Split the input text each time the character in the input changes
+
+        | examples:
+        |    "123"  -> ["1", "2", "3"]
+        |    "1121" -> ["11", "2", "1"]
+
+        :param input_text: The text to split into groups
+        :type  input_text: string
+
+        :return: list of strings
+        """
         return ["".join(g) for k, g in groupby(input_text)]
 
     @staticmethod
     def __to_ls_format(chunk_list):
+        """
+        Converts each chunk in the list to the look and say format
+
+        | examples:
+        |    ["1"]            -> ["11"]
+        |    ["11", "2", "1"] -> ["21", "12", "11"]
+
+        :param chunk_list: chunks to be converted to look and say format
+        :type  chunk_list: list of strings
+
+        :return: list of look and say formatted chunks
+        :rtype:  list of strings
+        """
         result = []
         for chunk in chunk_list:
             result.append(f"{len(chunk)}{chunk[0]}")
