@@ -32,11 +32,11 @@ class SequenceGenerator:
         chunks = self.__to_ls_format(chunks)
 
         # join chunks together
-        return ''.join(chunks)
+        return "".join(chunks)
 
     @staticmethod
     def __split(input_text):
-        return [''.join(g) for k, g in groupby(input_text)]
+        return ["".join(g) for k, g in groupby(input_text)]
 
     @staticmethod
     def __to_ls_format(chunk_list):
