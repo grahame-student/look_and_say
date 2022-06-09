@@ -31,7 +31,7 @@ jobs:
       - name: Run tests with pytest
         run: |
           source venv/bin/activate
-          pytest --cov=./ --cov-report=xml
+          pytest --cov=./ --cov-report=xml --cov-fail-under 100
           deactivate
       - name: Upload Coverage to Codecov
         uses: codecov/codecov-action@v3
