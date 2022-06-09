@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from hamcrest import assert_that, equal_to
-from sequence_generator import SequenceGenerator
+from look_and_say.generator.sequence_generator import SequenceGenerator
 
 
 class TestSequenceGenerator(TestCase):

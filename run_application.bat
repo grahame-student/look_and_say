@@ -14,7 +14,7 @@ rem   * If context menu items disappear / don't appear then rerun the installer 
 rem IMPORTANT INFORMATION
 rem ---------------------
 rem - The code to be assessed must have been checked into SVN, the wrong working copy revision will be reported if it hasn't
-rem - The code to be assessed must have been build sucessfully, the wrong memory metrics will be reported if it hasn't 
+rem - The code to be assessed must have been build successfully, the wrong memory metrics will be reported if it hasn't
 
 rem activate the script's virtual environment so that we have access to the correct packages
 call venv/Scripts/activate
